@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Buying Page</title>
+        <!--Link to CSS -->
+        <link rel="stylesheet" href="shop.css">
+        <link rel="stylesheet" href="../../student2/ExternalCSS.css">
+        <!--Link to cart icon-->
+        <script src="https://kit.fontawesome.com/3f26be3398.js" crossorigin="anonymous"></script>
+        <!-- link to JS file -->
+        <script src="shop.js" async></script> 
+        <script src="Navbar.js"></script>
+        <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+        
+    </head>
+        
+<body>
+    <!--Header -->
+    <header>
+        <div class="fas fa-bars" id="menu-btn"></div>
+        <a href="#" class = "logo"><span>Tour</span>SL</a>
+        <div class="menu-overlay">
+        <nav class="navbar">
+            <a href="../../student2/Menu.html">Home</a>
+            <a href = "../../student4/sitemap.html">Sitemap</a>
+            <a href = "../../student4/gallery.html">Gallery</a>
+            <a href = "../../student2/Query.html">Feedback</a>
+            <a href = "../../student3/Quis.html">Quiz</a>
+            <a href = "#" id="active">Cart</a>
+        </nav>
+        </div>
+        <div class="icons">
+                <i class="fas fa-search" id="search-btn"></i>
+                <i class="fas fa-users" id="about-us"></i>
+        </div>
+        <form action="#" class="search-bar-container">
+            <input type="search" id="search-bar" placeholder="Search">
+            <label for="search-bar" class="fas fa-search"></label>
+        </form>
+    </header>
+    <!--Items in the shop -->
+    <section class="shop container">
+        <div class="anch">
+            <h2 class="section-title">Ceylon Products</h2>
+        </div>
+        <a href="#carta" style="font-size: 40px; color:black ;"><i class="bi bi-cart-fill"></i></a>
+    </section>
+    <div class="shop-items">
+        <!-- Shop item 1 -->
+        <div class="shop-item" id="s1">
+            <span class="shop-item-title">Cinnamon</span>
+            <img class="shop-item-image" src="img/cinnamon.jpg" alt="cinnamon">
+            <div class="shop-item-details">
+                <span class="shop-item-price">£20</span>
+                <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+            </div>
+        </div>
+
+        <!-- Shop item 2 -->
+        <div class="shop-item" id="s2">
+            <span class="shop-item-title">cloves</span>
+            <img class="shop-item-image" src="img/cloves.jpg" alt="cloves">
+            <div class="shop-item-details">
+                <span class="shop-item-price">£40</span>
+                <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+            </div>
+        </div>
+
+        <!-- Shop item 3 -->
+        <div class="shop-item" id="s3">
+            <span class="shop-item-title">Ceylon Curry powder</span>
+            <img class="shop-item-image" src="img/currypowder.jpg" alt="curry">
+            <div class="shop-item-details">
+                <span class="shop-item-price">£75</span>
+                <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+            </div>
+        </div>
+
+        <!-- Shop item 4 -->
+        <div class="shop-item" id="s4">
+            <span class="shop-item-title">Green Tea</span>
+            <img class="shop-item-image" src="img/greentea.jpg" alt="green tea">
+            <div class="shop-item-details">
+                <span class="shop-item-price">£57.75</span>
+                <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+            </div>
+        </div>
+
+        <!-- Shop item 5 -->
+        <div class="shop-item" id="s5">
+            <span class="shop-item-title">Star</span>
+            <img class="shop-item-image" src="img/star.jpg" alt="star">
+            <div class="shop-item-details">
+                <span class="shop-item-price">£31</span>
+                <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+            </div>
+        </div>
+
+        <!-- Shop item 6 -->
+        <div class="shop-item" id="s6">
+            <span class="shop-item-title">Nuts</span>
+            <img class="shop-item-image" src="img/nuts.jpg" alt="nuts">
+            <div class="shop-item-details">
+                <span class="shop-item-price">£55</span>
+                <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+            </div>
+        </div>
+    </div> 
+    <section class="container content-section">
+        <!-- Shooping Cart -->
+        <h2 class="section-header" id="carta">Shop Cart</h2>
+        <div class="cart-row-header">
+            <span class="cart-item cart-header cart-column">ITEM</span>
+            <span class="cart-price cart-header cart-column">PRICE</span>
+            <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+        </div>
+        <div class="cart-items">
+        </div>
+        <!-- Total of the cart -->
+        <div class="cart-total">
+            <strong class="cart-total-title">Total</strong>
+            <span class="cart-total-price">£0</span>
+
+            <!-- buyer Details of the shopper -->
+            <form id="form" action="/" method="GET" onclick="checkforblank()">
+                <div>
+                    <label for="name">Full Name</label>
+                    <input id="name" name="name" type="text">
+                </div>  
+                <div>
+                    <label for="email">E-Mail</label>
+                    <input id="email" name="email" type="text">
+                </div>
+                <div>
+                    <label for="pnum">Phone Number</label>
+                    <input id="pnum" name="pnum" type="tel">
+                </div>
+                <!-- Place Order button AKA submit button (form submit + place order) -->
+                <button class="btn btn-primary btn-purchase" type="button">PURCHASE</button>
+            </form>
+        </div>
+    </section>
+    <section class = "footer">
+        <div class="box-container">
+            <div class="box">
+                <h3>About us</h3>
+                <p>From the mesmerizing beaches to lush green forests and ancient architecture, Tour Sri Lanka takes you on a journey of a lifetime. 
+                    We provide exceptional services and assistance to make your trip memorable and hassle-free. 
+                    Plan your trip with us and experience the best of Sri Lanka.</p>
+            </div>
+            <div class="box">
+                <h3>Our team</h3>
+                <a href="../../student3/Team.html">Kumal</a>
+                <a href="../../student3/Team.html">Rajeen</a>
+                <a href="../../student3/Team.html">Bhanuja</a>
+                <a href="../../student3/Team.html">Navanga</a>
+            </div>
+            <div class="box">
+                <h3>Quick links</h3>
+                <a href="../../student2/Menu.html">Home</a>
+                <a href="../../student4/sitemap.html">Sitemap</a>
+                <a href="../../student4/gallery.html">Gallery</a>
+                <a href="../../student2/Query.html">Feedback</a>
+                <a href="#">Cart</a>
+                <a href="../../student3/Team.html">About us</a>
+            </div>
+            <div class="box">
+                <h3>Follow us on</h3>
+                <a href="https://facebook.com">Facebook<i class="fab fa-facebook-square"></i></a>
+                <a href="https://twitter.com/?lang=en">Twitter<i class="fab fa-twitter"></i></a>
+                <a href="https://instagram.com/?lang=en">Instagram<i class="fab fa-instagram"></i></a>
+                <a href="https://linkedin.com/?lang=en">Linkedin<i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+        <h1 class="credit">Created by <span><a href="editor/bhanuja.html">Bhanuja Rathsara</a></span></h1>
+    </section>   
+</body> 
+</html>   

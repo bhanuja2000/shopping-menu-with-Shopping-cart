@@ -1,0 +1,284 @@
+/*    Imported Fonts From Google   */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@200;300;400;500&family=Audiowide&family=Montserrat:wght@500&family=Oswald:wght@200;300;400;500;600&display=swap');
+/*    kumal css file  */
+@import url(../student2/ExternalCSS.css);
+
+* {
+font-family: 'Poppins', sans-serif;
+margin: 0;
+padding: 0;
+scroll-padding-top: 32px;
+scroll-behavior: smooth;
+box-sizing: border-box;
+list-style: none;
+text-decoration: none;	
+}
+
+/*--------------------Colors Taken--------------------*/ 
+:root {
+    --archivo: 'Archivo', sans-serif;
+    --Audiowide: 'Audiowide',sans-serif;
+    --Montserrat: 'Montserrat', sans-serif;
+    --Oswald: 'Oswald', sans-serif;
+    --dark-green-color:#559b04;
+    --white-color:#fff;
+    --black-color:rgb(0, 0, 0);
+    --orange-color:rgb(255, 165, 0);
+	--main-color: #18214d;
+	--text-color: #171427; 
+	--background-color: #ffffff;
+}
+
+body {
+	color:var(--text-color);
+}
+
+.container {
+	max-width: 1068px;
+	margin: auto;
+	width: 100%;
+}
+
+section {
+	padding: 64px 0px 48px;
+}
+
+.section-title {
+	font-size: 32px;
+	font-weight: 650;
+	text-align: center;
+	margin-bottom: 28px;
+    margin-top: 10px;
+}
+
+
+
+/*--------------------Images Taken--------------------*/ 
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+    height: 250px;
+}
+
+/*--------------------Add to Cart Button Customization--------------------*/ 
+.btn {
+    text-align: center;
+    vertical-align: middle; 
+    padding: 10px 10px;
+    cursor: pointer;
+    margin-right: 650px;
+}
+
+.btn-header {
+    margin: .5em 15% 2px 15%;
+    color: white;
+    border: 2px solid #1b1b1a;
+    background-color: rgba(255, 255, 255, .1);
+    border-radius: 0;
+    font-size: 24px;
+    font-weight: lighter;
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+.btn-header:hover {
+    background-color: red;
+}
+
+.btn-play {
+    display: block;
+    margin: 0 auto;
+    color: #1b1b1a;
+    font-size: 64px;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    padding: 0;
+    text-align: center;
+}
+
+.btn-primary {
+    color: white;
+    background-color: #1b1b1a;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.btn-primary:hover {
+    background-color: #585858;
+}
+
+.shop-item-title {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 24px;
+    color: var(--text-color);
+    margin-bottom: 15px;
+    padding-top: 20px;
+}
+
+/*--------------------Customizing Shop Items--------------------*/ 
+.shop-item-image {
+    height: 480px;
+}
+
+.shop-item-details {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+
+.shop-item-price {
+    flex-grow: 1;
+    color: var(--text-color);
+    margin-left: 650px;
+    
+}
+
+/*--------------------Cart Items Customization--------------------*/ 
+.cart-header {
+    font-weight: bold;
+    font-size: 20px;
+    color: var(--text-color);
+}
+
+.cart-column {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgb(0, 0, 0);
+    margin-right: 24px;
+    padding-bottom: 10px;
+    margin-top: 10px;
+}
+
+.cart-row, .cart-row-header {
+    display: flex;
+}
+
+.cart-item {
+    width: 45%;
+}
+
+.cart-price {
+    width: 20%;
+    font-size: 30px;
+    color: var(--text-color);
+}
+
+.cart-quantity {
+    width: 35%;
+}
+
+.cart-item-title {
+    color: var(--text-color);
+    margin-left: 8px;
+    font-size: 19px;
+}
+
+.cart-item-image {
+    width: 75px;
+    height: auto;
+    border-radius: 10px;
+    margin-left: 150px;
+}
+
+/*--------------------Configuring Item Remove Button--------------------*/ 
+.btn-danger {
+    color: white;
+    background-color: lightblue;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.btn-danger:hover {
+    background-color: #CC4C4C;
+}
+
+.cart-quantity-input {
+    height: 45px;
+    width: 50px;
+    border-radius: 5px;
+    border: 1px solid #CC4C4C;
+    background-color: #eee;
+    color:black;
+    padding: 0;
+    text-align: center;
+    font-size: 19px;
+    margin-right: 25px;
+}
+
+
+
+.cart-total {
+    text-align: end;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.cart-total-title {
+    font-weight: bold;
+    font-size: 24px;
+    color: black;
+    margin-right: 20px;
+}
+
+.cart-total-price {
+    color: #333;
+    font-size: 17px;
+}
+
+/*--------------------Purchase Button--------------------*/ 
+.btn-purchase {
+    display: block;
+    margin: 40px auto 80px auto;
+    font-size: 28px;
+}
+
+form{	
+	text-align: right;
+	font-size: 23px;
+}
+
+/*--------------------Page Editor Part on Bottom--------------------*/ 
+.bottom {
+	display: flex;
+	justify-content: center;
+	padding: 100px;
+	color: whitesmoke;
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: black;
+	margin: 15% -5px -px -10px;
+}
+.shop-items{
+    
+    justify-content: space-between;
+    padding: 25px;
+    
+}
+/*--------------------cart bar--------------------*/ 
+#carta{
+    background-color: #F6C90E;
+    color: #FFFFFF;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+  }
+  
+  #carta:hover {
+    background-color: #FFD22E;
+    color: #333333;
+  }
+/*--------------------input box--------------------*/ 
+  input{
+    border: 1px solid black;
+    height: 18px;
+  }
